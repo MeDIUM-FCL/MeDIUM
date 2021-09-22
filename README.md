@@ -18,4 +18,4 @@ These files could be used as inputs to test the software. These files could also
 
 The source files are available in the src folder for reference.
 
-In case of any questions, suggestions and errors, kindly contact Sai G.S. Pai (saiganesh89@gmail.com).
+In case of any questions, suggestions and errors, kindly contact Sai G.S. PAI/Ze Zhou WANG (Geotechnical) at the following email address: medium.fcl(at)gmail.com.
