@@ -45,7 +45,7 @@ def f_parallel_axis_plot(ims_parameters, cms_parameters):
     ax = fig.add_subplot(1, 1, 1, frameon=False)
 
     for i in range(0, number_ims):
-        ax.plot(input_array[i, :], linestyle='solid', linewidth=6, color='lightgray', alpha=0.95,
+        ax.plot(input_array[i, :], linestyle='solid', linewidth=6, color='lightgray', alpha=1,
                 label='Initial model set')
     for i in range(0, number_cms):
         ax.plot(input_array[number_ims + i, :], linestyle='solid', linewidth=1.5, color='g',
