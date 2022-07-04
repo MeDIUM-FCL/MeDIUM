@@ -270,7 +270,8 @@ class InterfaceWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 self.pathnameprediction = str(self.filename_modelpredictions[0])
                 self.PathForModelPredictions.setText(self.pathnameprediction)
                 temp = f_read_model_predictions_excel(self.pathnameprediction)
-                self.ims_parameters = np.ndarray.astype(temp['parameters'], int)
+                # self.ims_parameters = np.ndarray.astype(temp['parameters'], int)
+                self.ims_parameters = np.ndarray.astype(temp['parameters'], float)
                 self.ims_predictions = np.around(temp['predictions'], 2)
                 self.number_predictions = np.shape(self.ims_predictions)[1]
                 self.number_parameters = np.shape(self.ims_parameters)[1]
@@ -285,10 +286,10 @@ class InterfaceWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                                    "\t Max: {}".format(self.number_parameters,
                                                        self.number_predictions,
                                                        self.number_ims_samples,
-                                                       np.min(self.ims_parameters[:, 0], 0),
-                                                       np.max(self.ims_parameters[:, 0], 0),
-                                                       np.min(self.ims_parameters, 0),
-                                                       np.max(self.ims_parameters, 0))
+                                                       np.round(np.min(self.ims_parameters[:, 0], 0), 2),
+                                                       np.round(np.max(self.ims_parameters[:, 0], 0), 2),
+                                                       np.round(np.min(self.ims_parameters, 0), 2),
+                                                       np.round(np.max(self.ims_parameters, 0), 2))
                 print(content_to_print)
 
                 self.ModelPredFileContents.setText(str(content_to_print))

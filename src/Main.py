@@ -6,5 +6,3 @@ app = QApplication(sys.argv)
 app.setStyle('Fusion')
 interface = InterfaceWindow()
 sys.exit(app.exec())
-
-

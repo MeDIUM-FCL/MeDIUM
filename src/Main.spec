@@ -4,8 +4,8 @@
 block_cipher = None
 
 
-a = Analysis(['F:\\MeDIUM_04082021_WZZ\\MeDIUM_20092021\\Main.py'],
-             pathex=['C:\\Users\\WzZ\\AppData\\Local\\Temp\\Main.py'],
+a = Analysis(['Main.py'],
+             pathex=['C:\\Users\\WzZ\\Downloads\\MeDIUM_28062022'],
              binaries=[],
              datas=[],
              hiddenimports=[],
@@ -33,7 +33,7 @@ exe = EXE(pyz,
           upx=True,
           upx_exclude=[],
           runtime_tmpdir=None,
-          console=True,
+          console=False,
           disable_windowed_traceback=False,
           target_arch=None,
           codesign_identity=None,
